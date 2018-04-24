@@ -1,0 +1,5 @@
+CommonCutterFull.m 是script 
+CommonForceFull.m 是计算力的函数
+只考虑了几何因素而未考虑动力学因素
+
+且对于R刀和球头刀只能用于满刀齿切削
