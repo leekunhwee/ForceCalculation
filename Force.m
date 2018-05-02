@@ -1,3 +1,9 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Copyright                           %
+%     This code is developed by Jianhui Li     %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
 clc
 clear
 close all

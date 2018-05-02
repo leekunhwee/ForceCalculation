@@ -1,3 +1,9 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Copyright                           %
+%     This code is developed by Jianhui Li     %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function [Time,Fx,Fy,Fz]=CommonForceFull(ap,ae,speed,feed,t,dt,dz,D,operation,Nt,R,Rr,Rz,beta0,alpha,gama,Hx,Lead,Ktc,Krc,Kac,Kte,Kre,Kae)
 %%通用刀具铣削力计算程序，直线走刀时的铣削力计算，适用于满刀切
 % 锥头与圆弧部分交点M

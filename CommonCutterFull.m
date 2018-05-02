@@ -1,3 +1,9 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Copyright                           %
+%     This code is developed by Jianhui Li     %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %通用刀具铣削力计算程序，直线走刀时的铣削力计算，仅适用于满刀切
 clc
 clear
