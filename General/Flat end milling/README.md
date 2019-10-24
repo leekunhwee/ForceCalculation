@@ -85,10 +85,8 @@ $${\phi _j}(z) = \phi + \sum\limits _{i = 1}^j {{\phi _{p,i}} - \psi (z)} \tag{7
 其中，${\phi _{pi}} $ 为齿间角，$\psi (z)$ 为滞后角，与螺旋角有关，对于直柄立铣刀有： $\psi (z)=\frac{2\tan\beta}{D}z$ 。
 
 根据式$(4)(5)$，对于圆柱立铣刀有下式成立：
-$$  {F _{x,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{\frac{f _t}{2}\left( { - {K _{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right) + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right)
-  dz} } \\\\
-  {F _{y,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{\frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right) + \left( {{K _{te}}\sin {\phi _j}\left( z \right) - {K _{re}}\cos {\phi _j}\left( z \right)} \right)
-}dz}  \\\\
+$$ {F _{x,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{\frac{f _t}{2}\left( { - {K _{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right) + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right) dz}} \\\\
+   {F _{y,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{\frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right) + \left( {{K _{te}}\sin {\phi _j}\left( z \right) - {K _{re}}\cos {\phi _j}\left( z \right)} \right)dz}}  \\\\
   {F _{z,j}}\left( {{\phi }} \right) = \int _{z _{j,1}}^{z _{j,2}} {\left[ { - {K _{ac}}{f _t}\sin {\phi _j}\left( z \right) - {K _{ae}}} \right]dz}  \\\\
 \tag{8}$$
 
@@ -104,11 +102,11 @@ $$
 
 为了避免刀具偏心对测量切削力的影响，取一个主轴旋转周期的切削力取和，并将此值除以一个周期时间。
 
-$${\bar F _q} = \frac{1}{T}\int _0^T {{F _q}\left( t  \right)dt} \tag{11}$$
+$$\overline{ F _q}  = \frac{1}{T}\int _0^T {{F _q}\left( t  \right)dt} \tag{11}$$
 
 由于 $ \phi=\omega t$ ，所以有： $ d\phi=\omega dt $。 其等价于将 $j=0$ 齿的底部角度 $\phi$ 从 $0$ 到 $2\pi$ 积分，所以式 $(11)$ 可以写为：
 
-$${\bar F _q} = \frac{1}{T\omega}\int_0^{2 \pi} {{F _q}\left( \phi  \right)d\phi} = \frac{1}{2\pi}\int _0^{2 \pi} {{F _q}\left( \phi  \right)d\phi}\tag{12}$$
+$$\overline{ F _q} = \frac{1}{T\omega}\int_0^{2 \pi} {{F _q}\left( \phi  \right)d\phi} = \frac{1}{2\pi}\int _0^{2 \pi} {{F _q}\left( \phi  \right)d\phi}\tag{12}$$
 
 因为每一刀齿周期的总材料去除量在有螺旋角和没有螺旋角的情况下都相同，因此螺旋角对平均切削力没有影响(或许可以从速度方向上的做功相等解释)。那么就可以看做是<b>没有螺旋角的简单情况</b>，将切削力微元沿着刀具一周积分，并除以齿间角$(\phi _p=2\pi/N)$，得到每齿周期的平均铣削力（由于只有在切入切出角以内才有力的存在，所以相当于仅沿着切出角到切出角积分）：
 
@@ -116,33 +114,60 @@ $$\overline {{F _q}}  =  \frac{1}{{{2\pi}}}\int _{0}^{2\pi} {{F _{q}}\left( \phi
 
 由于看做是直齿，因此，$dz=a _p$ ；$ \phi _j(z) = \phi$ ：
 
-$$\overline {{F _x}}  = \frac{Na _p}{2 \pi }\int _{{\phi _{st}}}^{{\phi _{ex}}} {\left( { - {K _{tc}}{f  _t}\frac{{\sin 2\phi }}{2} - {K  _{te}}\cos \phi  - {K _{rc}}{f _t}\frac{{\left( {1 - \cos 2\phi } \right)}}{2} - {K _{re}}\sin \phi } \right)d\phi } $$
+$$\overline {{F _x}}  = \frac{Na _p}{2 \pi } \int _{{\phi _{st}}}^{{\phi _{ex}}}\left[ {\frac{f _t}{2}\left( { - {K _{tc}}\sin 2{\phi } - {K _{rc}}\left( {1 - \cos 2{\phi }} \right)} \right) + \left( { - {K _{te}}\cos {\phi } - {K _{re}}\sin {\phi }} \right)}\right ] d\phi  \tag{14}$$
+
+$$\overline {{F _x}}  = \frac{Na _p}{2 \pi } \left[ {\frac{f _t}{4}\left( {  {K _{tc}}\cos 2{\phi } - {K _{rc}}\left( {2\phi - \sin 2{\phi }} \right)} \right) + \left( { - {K _{te}}\sin {\phi } + {K _{re}}\cos {\phi }} \right)}\right ] _{\phi _{st}}^{\phi _{ex}} \tag{15}$$
+
+$$\overline {{F _x}}  = \left[\frac{Na _p{f _t}}{8 \pi }  {\left( {  {K _{tc}}\cos 2{\phi } - {K _{rc}}\left( {2\phi - \sin 2{\phi }} \right)} \right) +\frac{Na _p}{2 \pi } \left( { - {K _{te}}\sin {\phi } + {K _{re}}\cos {\phi }} \right)}\right ] _{\phi _{st}}^{\phi _{ex}} \tag{16}$$
 
 同理有：
-	  	(2.8)
-	  	(2.9)
-如果采用“槽铣”进行切削，则有st=0°，ex=180°。式(2.7)、(2.8)和(2.9)可进一步简化为：
-	  	(2.10)
-	  	(2.11)
-	  	(2.12)
+
+$$\overline {{F _y}}  = \left[ {\frac{{Na _p{f _t}}}{{8\pi }}\left( {{K_{tc}}\left( {2\phi  - \sin 2\phi } \right) + {K_{rc}}\cos 2\phi } \right) - \frac{{Na _p}}{{2\pi }}\left( {{K _{te}}\cos \phi  + {K _{re}}\sin \phi } \right)} \right] _{{\phi _{st}}}^{{\phi _{ex}}} \tag{17}$$
+
+$$\overline {{F _z}}  = \frac{{{N}a _p}}{{2\pi }}\left[ {{K _{ac}}{f _t}\cos \phi  - {K _{ae}}\phi } \right] _{{\phi _{st}}}^{{\phi _{ex}}}\tag{18}$$
+
+如果采用“槽铣”进行切削，则有 $\phi _{st}=0°$，$\phi _{ex}=180°$。式$(16)(17)(18)$ 可进一步简化为：
+$$\overline {{F _x}}  =  - \frac{{Na _p}}{4}{K _{rc}}{f _t} - \frac{{Na _p}}{\pi }{K _{re}} \tag{19}$$
+
+$$\overline {{F _y}}  =  + \frac{{Na _p}}{4}{K _{tc}}{f _t} + \frac{{Na _p}}{\pi }{K _{te}} \tag{20}$$
+
+$$\overline {{F _z}}  =  - \frac{{Na _p}}{\pi}{K _{ac}}{f _t} - \frac{{Na _p}}{2 }{K _{ae}} \tag{21}$$
+
+
 ##	线性回归法求解切削力系数
-由2.1节可知，X、Y、Z三个方向的平均切削力可由每齿进给量的线性方程表示。所以可以用线性回归的方法得到6个未知的切削力系数。三个方向的线性回归方程的形式如下：
-	  	(2.13)
-其中， 是数据点，一共有n组数据点(n>2); 
-a0q代表截距；
-a1q代表斜率；
-Ei代表测量数据 与 之间的误差。
-斜率和截距可以通过最小二乘方法得到[6]，令：
-	  	(2.14)
-分别对a0q和a1q求偏导，有：
-	  	(2.15)
-	  	(2.16)
-令式(2.15)和(2.16)分别等于零，得a1q和a0q分别为：
-	  	(2.17)
-	  	(2.18)
-为了评估数据拟合的质量，可以计算判定系数r2，其中r为相干系数。r2的值描述了线性回归模型解释原始数据不确定性的程度。
-	  	(2.19)
-当a0q和a1q都通过对X、Y、Z三个方向的平均力线性回归确定了以后，6个切削力系数可以通过以下公式计算得到：
-	  	(2.20)
-	  	(2.21)
-	  	(2.22)
+由前面的推导得到的式 $(19)(20)(21)$ 可知， $X、Y、Z$ 三个方向的平均切削力可由每齿进给量的线性方程表示。所以可以用线性回归的方法得到 $6$ 个未知的切削力系数。三个方向的线性回归方程的形式如下：
+
+$$\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}}  = {a _{1q}} + {a _{0q}} \cdot {f _{t,{\kern 1pt} {\kern 1pt} i}} + {E _i}{\kern 1pt} ; \left( {q = x,y,z} \right)\left( {i = 1,2,...,n} \right)\tag{22}$$
+
+其中， $\left( {{f _{t,{\kern 1pt} {\kern 1pt} i}},\overline {{F _{q,{\kern 1pt} {\kern 1pt} i}}} } \right)$ 第 $i$ 组是数据点，一共有 $n$ 组数据点 $(n>2)$;
+$ a _{0q}$代表截距；
+$ a _{1q}$代表斜率；
+$E _i$ 代表测量数据 与 之间的误差。
+斜率和截距可以通过最小二乘方法得到，令：
+
+$${S _r} = \sum\limits _{i = 1}^n {E _i^2 = \sum\limits _{i = 1}^n {{{\left( {\overline {{F _{q,{\kern 1pt} {\kern 1pt} i}}}  - {a _{0q}} - {a _{1q}}{f _{t,{\kern 1pt} {\kern 1pt} i}}} \right)}^2}} } \tag{23}$$
+
+分别对 $ a _{0q}$ 和 $ a _{1q}$ 求偏导，有：
+
+$$\frac{{\partial {S _r}}}{{\partial {a _{0q}}}} =  - 2\sum\limits _{i = 1}^n {\left( {\overline {{F _{q,{\kern 1pt} {\kern 1pt} i}}}  - {a _{0q}} - {a _{1q}}{f _{t,{\kern 1pt} {\kern 1pt} i}}} \right)} \tag{24}$$
+
+$$ \frac{{\partial {S_r}}}{{\partial {a_{1q}}}} =  - 2\sum\limits_{i = 1}^n {\left[ {\left( {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}}  - {a_{0q}} - {a_{1q}}{f_{t,i}}} \right){f_{t,{\kern 1pt} {\kern 1pt} i}}} \right]} \tag{25}$$
+
+为了取得极值，令式 $(24)(25)$ 分别等于零，得$ a _{1q}$ 和 $ a _{0q}$ 分别为：
+
+$${a_{1q}} = \frac{{n\sum\limits_{i = 1}^n {{f_{q,{\kern 1pt} {\kern 1pt} i}}\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}}  - \sum\limits_{i = 1}^n {{f_{q,{\kern 1pt} {\kern 1pt} i}}\sum\limits_{i = 1}^n {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}} } } } }}{{n\sum\limits_{i = 1}^n {f_{t,{\kern 1pt} {\kern 1pt} i}^2 - {{\left( {\sum\limits_{i = 1}^n {{f_{t,{\kern 1pt} {\kern 1pt} i}}} } \right)}^2}} }}\tag{26}$$
+
+$${a_{0q}} = \frac{1}{n}\sum\limits_{i = 1}^n {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}} }  - {a_{1q}}\frac{1}{n}\sum\limits_{i = 1}^n {{f_{t,{\kern 1pt} {\kern 1pt} i}}} \tag{27}$$
+
+
+
+为了评估数据拟合的质量，可以计算判定系数 $r^2$ ，其中 $r$ 为相干系数。 $r^2$ 的值描述了线性回归模型解释原始数据不确定性的程度。
+
+$$r^2 = \frac{{{{\sum\limits_{i = 1}^n {\left( {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}}  - \frac{1}{n}\sum\limits_{i = 1}^n {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}} } } \right)} }^2} - \sum\limits_{i = 1}^n {E_i^2} }}{{{{\sum\limits_{i = 1}^n {\left( {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}}  - \frac{1}{n}\sum\limits_{i = 1}^n {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}} } } \right)} }^2}}}\tag{28}$$
+
+当 $ a _{0q}$ 和 $ a _{1q}$ 都通过对 $X、Y、Z$ 三个方向的平均力线性回归确定了以后， $6$ 个切削力系数可以通过以下公式计算得到：
+$${K_{tc}} =  - \frac{{4{a_{1y}}}}{{{N_t}a_p}}{\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {K_{te}} =  - \frac{{\pi  \cdot {a_{0y}}}}{{{N_t}a_p}}\tag{29}$$
+
+$${K_{rc}} = \frac{{4{a_{1x}}}}{{{N_t}a_p}}{\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {K_{re}} = \frac{{\pi  \cdot {a_{0x}}}}{{{N_t}a_p}}\tag{30}$$
+
+$${K_{ac}} =  - \frac{{\pi  \cdot {a_{1z}}}}{{{N_t}a_p}}{\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {K_{ae}} =  - \frac{{2{a_{0z}}}}{{{N_t}a_p}}\tag{31}$$
