@@ -102,17 +102,16 @@ $${\phi _j}(z) = \phi + \sum\limits _{i = 1}^j {{\phi _{p,i}} - \psi (z)} \tag{7
 
 
 根据式$(4)(5)$，对于圆柱立铣刀有下式成立：
-$$\begin{gathered}
-  {F _{x,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {\left[ \begin{gathered}
+$$  {F _{x,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{ \begin{bmatrix}
   \frac{{{f _t}}}{2}\left( { - {K_{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right) \\\\
    + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right)
-\end{gathered}  \right]dz}  \\\\
-  {F _{y,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {\left[ \begin{gathered}
+  \end{bmatrix}dz} } \\\\
+  {F _{y,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{ \begin{bmatrix}
   \frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right) \\\\
    + \left( {{K _{te}}\sin {\phi _j}\left( z \right) - {K _{re}}\cos {\phi _j}\left( z \right)} \right)
-\end{gathered}  \right]dz}  \\\\
+\end{bmatrix}}dz}  \\\\
   {F _{z,j}}\left( {{\phi }} \right) = \int _{{z_{j,1}}}^{{z _{j,2}}} {\left[ { - {K _{ac}}{f _t}\sin {\phi _j}\left( z \right) - {K _{ae}}} \right]dz}  \\\\
-\end{gathered}\tag{8}$$
+\tag{8}$$
 
 当 $j=0$ 齿的底部转到某个角度 $\phi$ 时，该刀具三向所受的总切削力分别为:
 
