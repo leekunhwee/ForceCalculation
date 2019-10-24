@@ -84,21 +84,17 @@ $${\phi _j}(z) = \phi + \sum\limits _{i = 1}^j {{\phi _{p,i}} - \psi (z)} \tag{7
 
 其中，${\phi _{pi}} $ 为齿间角，$\psi (z)$ 为滞后角，与螺旋角有关，对于直柄立铣刀有： $\psi (z)=\frac{2\tan\beta}{D}z$ 。
 
-
-
 根据式$(4)(5)$，对于圆柱立铣刀有下式成立：
-$$  {F _{x,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{
-  \frac{f _t}{2}\left( { - {K _{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right)   + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right)
+$$  {F _{x,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{\frac{f _t}{2}\left( { - {K _{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right) + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right)
   dz} } \\\\
-  {F _{y,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{
-  \frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right)  + \left( {{K _{te}}\sin {\phi _j}\left( z \right) - {K _{re}}\cos {\phi _j}\left( z \right)} \right)
+  {F _{y,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{\frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right) + \left( {{K _{te}}\sin {\phi _j}\left( z \right) - {K _{re}}\cos {\phi _j}\left( z \right)} \right)
 }dz}  \\\\
-  {F _{z,j}}\left( {{\phi }} \right) = \int _{z_{j,1}}^{z _{j,2}} {\left[ { - {K _{ac}}{f _t}\sin {\phi _j}\left( z \right) - {K _{ae}}} \right]dz}  \\\\
+  {F _{z,j}}\left( {{\phi }} \right) = \int _{z _{j,1}}^{z _{j,2}} {\left[ { - {K _{ac}}{f _t}\sin {\phi _j}\left( z \right) - {K _{ae}}} \right]dz}  \\\\
 \tag{8}$$
 
 当 $j=0$ 齿的底部转到某个角度 $\phi$ 时，该刀具三向所受的总切削力分别为:
 
-$${F _x}\left( \phi  \right) = \sum\limits_{j = 0}^{N - 1} {{F _{x,j}}\left( \phi  \right)} {\kern 1pt};{\kern 1pt}{F _y}\left( \phi  \right) = \sum\limits _{j = 0}^{N - 1} {{F _{y,j}}\left( \phi  \right)} {\kern 1pt};{\kern 1pt}{F _z}\left( \phi  \right) = \sum\limits _{j = 0}^{N - 1} {{F _{z,j}}\left( \phi  \right)} \tag{9}
+$${F _x}\left( \phi  \right) = \sum\limits _{j = 0}^{N - 1} {{F _{x,j}}\left( \phi  \right)} {\kern 1pt};{\kern 1pt}{F _y}\left( \phi  \right) = \sum\limits _{j = 0}^{N - 1} {{F _{y,j}}\left( \phi  \right)} {\kern 1pt};{\kern 1pt}{F _z}\left( \phi  \right) = \sum\limits _{j = 0}^{N - 1} {{F _{z,j}}\left( \phi  \right)} \tag{9}
 $$
 
 可以统一写为：
@@ -108,11 +104,11 @@ $$
 
 为了避免刀具偏心对测量切削力的影响，取一个主轴旋转周期的切削力取和，并将此值除以一个周期时间。
 
-$${\bar F_q} = \frac{1}{T}\int_0^T {{F_q}\left( t  \right)dt} \tag{11}$$
+$${\bar F _q} = \frac{1}{T}\int _0^T {{F _q}\left( t  \right)dt} \tag{11}$$
 
 由于 $ \phi=\omega t$ ，所以有： $ d\phi=\omega dt $。 其等价于将 $j=0$ 齿的底部角度 $\phi$ 从 $0$ 到 $2\pi$ 积分，所以式 $(11)$ 可以写为：
 
-$${\bar F_q} = \frac{1}{T\omega}\int_0^{2 \pi} {{F_q}\left( \phi  \right)d\phi} = \frac{1}{2\pi}\int_0^{2 \pi} {{F_q}\left( \phi  \right)d\phi}\tag{12}$$
+$${\bar F _q} = \frac{1}{T\omega}\int_0^{2 \pi} {{F _q}\left( \phi  \right)d\phi} = \frac{1}{2\pi}\int _0^{2 \pi} {{F _q}\left( \phi  \right)d\phi}\tag{12}$$
 
 因为每一刀齿周期的总材料去除量在有螺旋角和没有螺旋角的情况下都相同，因此螺旋角对平均切削力没有影响(或许可以从速度方向上的做功相等解释)。那么就可以看做是<b>没有螺旋角的简单情况</b>，将切削力微元沿着刀具一周积分，并除以齿间角$(\phi _p=2\pi/N)$，得到每齿周期的平均铣削力（由于只有在切入切出角以内才有力的存在，所以相当于仅沿着切出角到切出角积分）：
 
@@ -120,7 +116,7 @@ $$\overline {{F _q}}  =  \frac{1}{{{2\pi}}}\int _{0}^{2\pi} {{F _{q}}\left( \phi
 
 由于看做是直齿，因此，$dz=a _p$ ；$ \phi _j(z) = \phi$ ：
 
-$$\overline {{F _x}}  = \frac{Na _p}{2 \pi }\int_{{\phi _{st}}}^{{\phi _{ex}}} {\left( { - {K_{tc}}{f _t}\frac{{\sin 2\phi }}{2} - {K  _{te}}\cos \phi  - {K _{rc}}{f _t}\frac{{\left( {1 - \cos 2\phi } \right)}}{2} - {K _{re}}\sin \phi } \right)d\phi } $$
+$$\overline {{F _x}}  = \frac{Na _p}{2 \pi }\int _{{\phi _{st}}}^{{\phi _{ex}}} {\left( { - {K _{tc}}{f  _t}\frac{{\sin 2\phi }}{2} - {K  _{te}}\cos \phi  - {K _{rc}}{f _t}\frac{{\left( {1 - \cos 2\phi } \right)}}{2} - {K _{re}}\sin \phi } \right)d\phi } $$
 
 同理有：
 	  	(2.8)
