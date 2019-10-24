@@ -1,0 +1,16 @@
+This example contains integrated Process of experiment data extraction and cutting coefficient calculation.
+
+Content:
+1. 5 .csv files are the force data exported by .dwd including cutting force of three direction in 1s. 
+Export method of .scv
+In the DynoWare software, open the .dwd. Click File-Export...-Channel Choose Fx Fy Fz-Value Delimiter Comma (*.scv)-Time Choosing 1s(For example 6s to 7s)
+
+2. The MATLAB code readdata.m can be used to read data from 5 .csv files and save as force.mat.
+
+3. The MATLAB code Cuttingparameters.m is the main code of cutting coefficient calculation.
+
+
+
+Download link: https://github.com/leekunhwee/ForceCalculation/raw/master/Example.rar
+
+More codes: https://leekunhwee.github.io/
