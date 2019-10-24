@@ -137,7 +137,7 @@ $$\overline {{F _z}}  =  - \frac{{Na _p}}{\pi}{K _{ac}}{f _t} - \frac{{Na _p}}{2
 ##	线性回归法求解切削力系数
 由前面的推导得到的式 $(19)(20)(21)$ 可知， $X、Y、Z$ 三个方向的平均切削力可由每齿进给量的线性方程表示。所以可以用线性回归的方法得到 $6$ 个未知的切削力系数。三个方向的线性回归方程的形式如下：
 
-$$\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}}  = {a _{1q}} + {a _{0q}} \cdot {f _{t,{\kern 1pt} {\kern 1pt} i}} + {E _i}{\kern 1pt} ; \left( {q = x,y,z} \right)\left( {i = 1,2,...,n} \right)\tag{22}$$
+$$\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}}  = {a_{1q}} \cdot {f_{t,{\kern 1pt} {\kern 1pt} i}} + {a_{0q}} + {E_i}{\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt}  ; \left( {q = x,y,z} \right)\left( {i = 1,2,...,n} \right)\tag{22}$$
 
 其中， $\left( {{f _{t,{\kern 1pt} {\kern 1pt} i}},\overline {{F _{q,{\kern 1pt} {\kern 1pt} i}}} } \right)$ 第 $i$ 组是数据点，一共有 $n$ 组数据点 $(n>2)$;
 $ a _{0q}$代表截距；
