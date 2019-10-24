@@ -37,38 +37,38 @@ $$ h({\phi _j}(z)) = {f _{t}}\sin {\phi _j}(z) \tag{2}$$
 
 根据图1所示几何关系，将$RTC$坐标系下的切削力转化到$XYZ$坐标系下，有：
 
-$$\left[ {\begin{array}{c}
-  {d{F _{x,j}}({\phi _j}(z))} \\
-  {d{F _{y,j}}({\phi _j}(z))} \\
+$$\begin{pmatrix}
+  {d{F _{x,j}}({\phi _j}(z))} \\\\
+  {d{F _{y,j}}({\phi _j}(z))} \\\\
   {d{F _{z,j}}({\phi _j}(z))}
-\end{array}} \right] = \left[ {\begin{array}{c}
-  { - \cos {\phi _j}}&{ - \sin {\phi _j} }&{ 0 } \\
-  {\sin {\phi _j}}&{ - \cos {\phi _j}}&{ 0 } \\
+\end{pmatrix} = \left[ {\begin{array}{c}
+  { - \cos {\phi _j}(z)}&{ - \sin {\phi _j}(z) }&{ 0 } \\\\
+  {\sin {\phi _j}(z)}&{ - \cos {\phi _j}(z)}&{ 0 } \\\\
   0&{ 0 }&{ -1 }
-\end{array}} \right]\left[ {\begin{array}{c}
-  {d{F _{t,j}}({\phi _j}(z))} \\
-  {d{F _{r,j}}({\phi _j}(z))} \\
+\end{array}} \right]\begin{pmatrix}
+  {d{F _{t,j}}({\phi _j}(z))} \\\\
+  {d{F _{r,j}}({\phi _j}(z))} \\\\
   {d{F _{a,j}}({\phi _j}(z))}
-\end{array}} \right] \tag{3}$$
+\end{pmatrix} \tag{3}$$
 
 那么，由$(1)(2)(3)$，就会有：
 $$\begin{array}{l}
 d{F _{x,j}}\left( {{\phi _j}\left( z \right)} \right) = g\left( {{\phi _j}\left( z \right)} \right)\left[ \begin{array}{l}
- - \left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\cos {\phi _j}\left( z \right)\\
+ - \left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\cos {\phi _j}\left( z \right)\\\\
  - \left( {{K _{rc}}{f _t}\sin {\phi _j}\left( z \right){\rm{ + }}{K _{re}}} \right)\sin {\phi _j}\left( z \right)
-\end{array} \right]dz\\
+\end{array} \right]dz\\\\
 {\rm{ = }}g\left( {{\phi _j}\left( z \right)} \right)\left[ \begin{array}{l}
-\frac{{{f _t}}}{2}\left( { - {K _{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right)\\
+\frac{{{f _t}}}{2}\left( { - {K _{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right)\\\\
  + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right)
-\end{array} \right]dz\\
+\end{array} \right]dz\\\\
 d{F _{y,j}}\left( {{\phi _j}\left( z \right)} \right) = g\left( {{\phi _j}\left( z \right)} \right)\left[ \begin{array}{l}
-\left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\sin {\phi _j}\left( z \right){\kern 1pt} \\
+\left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\sin {\phi _j}\left( z \right){\kern 1pt} \\\\
  - \left( {{K _{rc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{re}}} \right)\cos {\phi _j}\left( z \right)
-\end{array} \right]dz\\
+\end{array} \right]dz\\\\
 {\rm{ = }}g\left( {{\phi _j}\left( z \right)} \right)\left[ \begin{array}{l}
-\frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right)\\
+\frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right)\\\\
  + \left( {{K _{te}}\sin {\phi _j}\left( z \right) - {K _{re}}\cos {\phi _j}\left( z \right)} \right)
-\end{array} \right]dz\\
+\end{array} \right]dz\\\\
 d{F _{z,j}}\left( {{\phi _j}\left( z \right)} \right) = g\left( {{\phi _j}\left( z \right)} \right)\left[ { - {K _{ac}}{f _t}\sin {\phi _j}\left( z \right) - {K _{ae}}} \right]dz
 \end{array}\tag{4}$$
 
@@ -77,15 +77,15 @@ d{F _{z,j}}\left( {{\phi _j}\left( z \right)} \right) = g\left( {{\phi _j}\left(
 
 沿轴向积分，可获得作用在刀齿$j$上的切削力在$XYZ$坐标系中的表达式：
 
-$$\left[ {\begin{array}{c}
-  {{F _{x,j}}({\phi _j})} \\
-  {{F _{y,j}}({\phi _j})} \\
+$$\begin{pmatrix}
+  {{F _{x,j}}({\phi _j})} \\\\
+  {{F _{y,j}}({\phi _j})} \\\\
   {{F _{z,j}}({\phi _j})}
-\end{array}} \right] = \left[ {\begin{array}{*{20}{c}}
-  {\int _{z1}^{z2} {d{F _{x,j}}({\phi _j}(z))} } \\
-  {\int _{z1}^{z2} {d{F _{y,j}}({\phi _j}(z))} } \\
+\end{pmatrix} = \begin{pmatrix}
+  {\int _{z1}^{z2} {d{F _{x,j}}({\phi _j}(z))} } \\\\
+  {\int _{z1}^{z2} {d{F _{y,j}}({\phi _j}(z))} } \\\\
   {\int _{z1}^{z2} {d{F _{z,j}}({\phi _j}(z))} }
-\end{array}} \right] \tag{5}$$
+\end{pmatrix} \tag{5}$$
 
 式中，<b>积分上、下限取决于每个切削刃的接触情况</b>，因此后面的式子中可以将窗函数$g({\phi _j}(z))$略去。对所有刀齿上的切削力求和，可得到铣刀沿进给、法线和轴向3个方向上的切削力。
 
