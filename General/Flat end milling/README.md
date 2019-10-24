@@ -21,7 +21,7 @@ $d z$ ,$h({\phi _j}(z))$ ——分别表示切削刃轴向切深微元及切削�
 $K _{tc}$ ,$K _{rc}$ ,$K _{ac}$ ——分别表示切向、径向和轴向切削力系数；
 $K _{te}$ ,$K _{re}$ ,$K _{ae}$ ——分别表示切向、径向和轴向刃口力系数。
 $g({\phi _j}(z))$是根据切入切出角，来判断参与切削与否的二元参数，参与切削时为$1$，不参与切削时为$0$。
-另外，需要注意的是，对于某一特定刀具：$\phi _j$其实是时间$t$和高度$z$的函数。
+另外，需要注意的是，对于某一特定刀具：$\phi _j$ 其实是时间 $t$ 和高度 $z$ 的函数。
 
 对于平底立铣刀有：
 $$ h({\phi _j}(z)) = {f _{t}}\sin {\phi _j}(z) \tag{2}$$
@@ -52,25 +52,19 @@ $$\begin{pmatrix}
 \end{pmatrix} \tag{3}$$
 
 那么，由$(1)(2)(3)$，就会有：
-$$
-d{F _{x,j}}\left( {{\phi _j}\left( z \right)} \right) = g \left( {{\phi _j}\left( z \right)} \right)\left[
- - \left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\cos {\phi _j}\left( z \right)
- - \left( {{K _{rc}}{f _t}\sin {\phi _j}\left( z \right){\rm{ + }}{K _{re}}} \right)\sin {\phi _j}\left( z \right)
- \right]dz\\\\
+
+$$ d{F _{x,j}}\left( {{\phi _j}\left( z \right)} \right) = g \left( {{\phi _j}\left( z \right)} \right)\left[ - \left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\cos {\phi _j}\left( z \right)
+ - \left( {{K _{rc}}{f _t}\sin {\phi _j}\left( z \right){\rm{ + }}{K _{re}}} \right)\sin {\phi _j}\left( z \right) \right]dz\\\\
 {\rm{ = }}g\left( {{\phi _j}\left( z \right)} \right)\left[
 \frac{{{f _t}}}{2}\left( { - {K _{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right)
- + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right)
- \right]dz\\\\
-d{F _{y,j}}\left( {{\phi _j}\left( z \right)} \right) = g \left( {{\phi _j}\left( z \right)} \right)\left[
-\left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\sin {\phi _j}\left( z \right)
- - \left( {{K _{rc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{re}}} \right)\cos {\phi _j}\left( z \right)
- \right]dz\\\\
+ + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right) \right]dz\\\\
+d{F _{y,j}}\left( {{\phi _j}\left( z \right)} \right) = g \left( {{\phi _j}\left( z \right)} \right)\left[\left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\sin {\phi _j}\left( z \right)
+ - \left( {{K _{rc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{re}}} \right)\cos {\phi _j}\left( z \right)\right]dz\\\\
 {\rm{ = }}g\left( {{\phi _j}\left( z \right)} \right)\left[
 \frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right)
  + \left( {{K _{te}}\sin {\phi _j}\left( z \right) - {K _{re}}\cos {\phi _j}\left( z \right)} \right)
  \right]dz\\\\
-d{F _{z,j}}\left( {{\phi _j}\left( z \right)} \right) = g \left( {{\phi _j}\left( z \right)} \right)\left[ { - {K _{ac}}{f _t}\sin {\phi _j}\left( z \right) - {K _{ae}}} \right]dz
-\tag{4}$$
+d{F _{z,j}}\left( {{\phi _j}\left( z \right)} \right) = g \left( {{\phi _j}\left( z \right)} \right)\left[ { - {K _{ac}}{f _t}\sin {\phi _j}\left( z \right) - {K _{ae}}} \right]dz \tag{4}$$
 
 沿轴向积分，可获得作用在刀齿$j$上的切削力在$XYZ$坐标系中的表达式：
 
