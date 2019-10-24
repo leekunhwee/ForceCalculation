@@ -53,22 +53,22 @@ $$\begin{pmatrix}
 
 那么，由$(1)(2)(3)$，就会有：
 $$\begin{array}{c}
-d{F _{x,j}}\left( {{\phi _j}\left( z \right)} \right) = g\left( {{\phi _j}\left( z \right)} \right)\left[ \begin{array}{c}
- - \left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\cos {\phi _j}\left( z \right)\\\\
+d{F _{x,j}}\left( {{\phi _j}\left( z \right)} \right) = g\left( {{\phi _j}\left( z \right)} \right)\left[
+ - \left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\cos {\phi _j}\left( z \right)
  - \left( {{K _{rc}}{f _t}\sin {\phi _j}\left( z \right){\rm{ + }}{K _{re}}} \right)\sin {\phi _j}\left( z \right)
-\end{array} \right]dz\\\\
-{\rm{ = }}g\left( {{\phi _j}\left( z \right)} \right)\left[ \begin{array}{c}
-\frac{{{f _t}}}{2}\left( { - {K _{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right)\\\\
+ \right]dz\\\\
+{\rm{ = }}g\left( {{\phi _j}\left( z \right)} \right)\left[
+\frac{{{f _t}}}{2}\left( { - {K _{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right)
  + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right)
-\end{array} \right]dz\\\\
-d{F _{y,j}}\left( {{\phi _j}\left( z \right)} \right) = g\left( {{\phi _j}\left( z \right)} \right)\left[ \begin{array}{c}
-\left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\sin {\phi _j}\left( z \right){\kern 1pt} \\\\
+ \right]dz\\\\
+d{F _{y,j}}\left( {{\phi _j}\left( z \right)} \right) = g\left( {{\phi _j}\left( z \right)} \right)\left[
+\left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\sin {\phi _j}\left( z \right)
  - \left( {{K _{rc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{re}}} \right)\cos {\phi _j}\left( z \right)
-\end{array} \right]dz\\\\
-{\rm{ = }}g\left( {{\phi _j}\left( z \right)} \right)\left[ \begin{array}{c}
-\frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right)\\\\
+ \right]dz\\\\
+{\rm{ = }}g\left( {{\phi _j}\left( z \right)} \right)\left[
+\frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right)
  + \left( {{K _{te}}\sin {\phi _j}\left( z \right) - {K _{re}}\cos {\phi _j}\left( z \right)} \right)
-\end{array} \right]dz\\\\
+ \right]dz\\\\
 d{F _{z,j}}\left( {{\phi _j}\left( z \right)} \right) = g\left( {{\phi _j}\left( z \right)} \right)\left[ { - {K _{ac}}{f _t}\sin {\phi _j}\left( z \right) - {K _{ae}}} \right]dz
 \end{array}\tag{4}$$
 
@@ -102,14 +102,12 @@ $${\phi _j}(z) = \phi + \sum\limits _{i = 1}^j {{\phi _{p,i}} - \psi (z)} \tag{7
 
 
 根据式$(4)(5)$，对于圆柱立铣刀有下式成立：
-$$  {F _{x,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{ \begin{bmatrix}
-  \frac{{{f _t}}}{2}\left( { - {K_{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right) \\\\
-   + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right)
-  \end{bmatrix}dz} } \\\\
-  {F _{y,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{ \begin{bmatrix}
-  \frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right) \\\\
-   + \left( {{K _{te}}\sin {\phi _j}\left( z \right) - {K _{re}}\cos {\phi _j}\left( z \right)} \right)
-\end{bmatrix}}dz}  \\\\
+$$  {F _{x,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{
+  \frac{{{f _t}}}{2}\left( { - {K_{tc}}\sin 2{\phi _j}\left( z \right) - {K _{rc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right)} \right)   + \left( { - {K _{te}}\cos {\phi _j}\left( z \right) - {K _{re}}\sin {\phi _j}\left( z \right)} \right)
+  dz} } \\\\
+  {F _{y,j}}\left( {{\phi }} \right) = \int _{{z _{j,1}}}^{{z _{j,2}}} {{
+  \frac{{{f _t}}}{2}\left( {{K _{tc}}\left( {1 - \cos 2{\phi _j}\left( z \right)} \right) - {K _{rc}}\sin 2{\phi _j}\left( z \right)} \right)  + \left( {{K _{te}}\sin {\phi _j}\left( z \right) - {K _{re}}\cos {\phi _j}\left( z \right)} \right)
+}dz}  \\\\
   {F _{z,j}}\left( {{\phi }} \right) = \int _{{z_{j,1}}}^{{z _{j,2}}} {\left[ { - {K _{ac}}{f _t}\sin {\phi _j}\left( z \right) - {K _{ae}}} \right]dz}  \\\\
 \tag{8}$$
 
@@ -135,11 +133,10 @@ $${\bar F_q} = \frac{1}{T\omega}\int_0^{2 \pi} {{F_q}\left( \phi  \right)d\phi} 
 
 $$\overline {{F _q}}  =  \frac{1}{{{2\pi}}}\int _{0}^{2\pi} {{F _{q}}\left( \phi  \right)d\phi } =\frac{N}{2\pi}\int _{{\phi _{st}}}^{{\phi _{ex}}} {{F _{q,j}}\left( \phi  \right)d\phi }=\frac{1}{{{\phi _p}}}\int _{{\phi _{st}}}^{{\phi _{ex}}} {{F _{q,j}}\left( \phi  \right)d\phi } {\kern 1pt};{\kern 1pt} q = x,y,z\tag{13}$$
 
-由于看做是直齿，因此有：
-	  	(2.4)
-	  	(2.5)
-	  	(2.6)
-	  	(2.7)
+由于看做是直齿，因此，$dz=a _p$ ；$ \phi _j(z) = \phi$ ：
+
+$$\overline {{F_x}}  = \frac{Na _p}{{2\pi }}\int_{{\phi _{st}}}^{{\phi _{ex}}} {\left( { - {K_{tc}}{f_t}\frac{{\sin 2\phi }}{2} - {K_{te}}\cos \phi  - {K_{rc}}{f_t}\frac{{\left( {1 - \cos 2\phi } \right)}}{2} - {K_{re}}\sin \phi } \right)d\phi } $$
+
 同理有：
 	  	(2.8)
 	  	(2.9)
