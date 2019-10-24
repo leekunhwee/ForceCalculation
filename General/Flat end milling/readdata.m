@@ -3,7 +3,8 @@ clc
 clear 
 close all
 
-% Notion Here the x, y and z direction were changed according to the
+%% Notion Here the x, y and z direction were changed according to the
+
 % feeding direction.
 % Represent the feed speed F = 300mm/min, 3 direction cutting forces in 1s, Spindle speed 6000rpm, Axial cutting depth is 3mm, Slotting
 Fy_300 = (xlsread('C:\Work\总结\切削\切削力建模及切削力系数识别方法\切削力系数识别例子和说明\Flat milling tool\6-n6000f300ap3ae25.csv', '6-n6000f300ap3ae25', 'B21:B10021'))';%读取Excel表中文件

@@ -135,14 +135,24 @@ n = length(FT);
 
 a1y = (n*sum(FT.*mean_Fy) - sum(FT)*sum(mean_Fy))/(n*sum(FT.^2) - (sum(FT))^2);
 a0y = mean(mean_Fy) - a1y*mean(FT);
-Ktc_fit = 4*a1y/(Nt*a)          % Radial cutting coefficient N/mm^2
-Kte_fit = pi*a0y/(Nt*a)         % Radial plough coefficient N/mm 
+Ktc_fit = - 4*a1y/(Nt*a);          % Radial cutting coefficient N/mm^2
+Kte_fit = - pi*a0y/(Nt*a);         % Radial plough coefficient N/mm 
+
+if Ktc_fit<0
+    Ktc_fit = - Ktc_fit;
+    Kte_fit = - Kte_fit;
+end
 
 a1x = (n*sum(FT.*mean_Fx) - sum(FT)*sum(mean_Fx))/(n*sum(FT.^2) - (sum(FT))^2);
 a0x = mean(mean_Fx) - a1x*mean(FT);
 
-Krc_fit = -4*a1x/(Nt*a)           % Tangential cutting coefficient N/mm^2
-Kre_fit = -pi*a0x/(Nt*a)          % Tangential plough coefficient N/mm                               
+Krc_fit = 4*a1x/(Nt*a);           % Tangential cutting coefficient N/mm^2
+Kre_fit = pi*a0x/(Nt*a)  ;        % Tangential plough coefficient N/mm   
+
+if Krc_fit < 0
+    Krc_fit = - Krc_fit;
+    Kre_fit = - Kre_fit;
+end
 
 % Refer to Altintas ¡¶Manufacturing Automation¡· P47
 % Altintas, Y. (2012). Manufacturing Automation: 
@@ -152,8 +162,20 @@ Kre_fit = -pi*a0x/(Nt*a)          % Tangential plough coefficient N/mm
 
 a1z = (n*sum(FT.*mean_Fz) - sum(FT)*sum(mean_Fz))/(n*sum(FT.^2) - (sum(FT))^2);
 a0z = mean(mean_Fz) - a1z*mean(FT);
-Kac_fit = pi*a1z/(Nt*a)         % Axial cutting coefficient N/mm^2
-Kae_fit = 2*a0z/(Nt*a)          % Axial plough coefficient N/mm
+Kac_fit = - pi*a1z/(Nt*a);         % Axial cutting coefficient N/mm^2
+Kae_fit = - 2*a0z/(Nt*a) ;         % Axial plough coefficient N/mm
+
+if Kac_fit < 0
+    Kac_fit = - Kac_fit;
+    Kae_fit = - Kae_fit;
+end
+
+Ktc_fit
+Kte_fit
+Krc_fit
+Kre_fit
+Kac_fit
+Kae_fit
 
 %% Plot the fitting stright line
 figure(6)
