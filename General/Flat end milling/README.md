@@ -122,7 +122,7 @@ $$\overline {{F _x}}  = \left[\frac{Na _p{f _t}}{8 \pi }  {\left( {  {K _{tc}}\c
 
 同理有：
 
-$$\overline {{F _y}}  = \left[ {\frac{{Na _p{f _t}}}{{8\pi }}\left( {{K_{tc}}\left( {2\phi  - \sin 2\phi } \right) + {K_{rc}}\cos 2\phi } \right) - \frac{{Na _p}}{{2\pi }}\left( {{K _{te}}\cos \phi  + {K _{re}}\sin \phi } \right)} \right] _{{\phi _{st}}}^{{\phi _{ex}}} \tag{17}$$
+$$\overline {{F _y}}  = \left[ {\frac{{Na _p{f _t}}}{{8\pi }}\left( {{K _{tc}}\left( {2\phi  - \sin 2\phi } \right) + {K _{rc}}\cos 2\phi } \right) - \frac{{Na _p}}{{2\pi }}\left( {{K _{te}}\cos \phi  + {K  _{re}}\sin \phi } \right)} \right] _{{\phi _{st}}}^{{\phi _{ex}}} \tag{17}$$
 
 $$\overline {{F _z}}  = \frac{{{N}a _p}}{{2\pi }}\left[ {{K _{ac}}{f _t}\cos \phi  - {K _{ae}}\phi } \right] _{{\phi _{st}}}^{{\phi _{ex}}}\tag{18}$$
 
@@ -166,6 +166,7 @@ $${a_{0q}} = \frac{1}{n}\sum\limits_{i = 1}^n {\overline {{F_{q,{\kern 1pt} {\ke
 $$r^2 = \frac{{{{\sum\limits_{i = 1}^n {\left( {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}}  - \frac{1}{n}\sum\limits_{i = 1}^n {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}} } } \right)} }^2} - \sum\limits_{i = 1}^n {E_i^2} }}{{{{\sum\limits_{i = 1}^n {\left( {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}}  - \frac{1}{n}\sum\limits_{i = 1}^n {\overline {{F_{q,{\kern 1pt} {\kern 1pt} i}}} } } \right)} }^2}}}\tag{28}$$
 
 当 $ a _{0q}$ 和 $ a _{1q}$ 都通过对 $X、Y、Z$ 三个方向的平均力线性回归确定了以后， $6$ 个切削力系数可以通过以下公式计算得到：
+
 $${K_{tc}} =  - \frac{{4{a_{1y}}}}{{{N_t}a_p}}{\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {K_{te}} =  - \frac{{\pi  \cdot {a_{0y}}}}{{{N_t}a_p}}\tag{29}$$
 
 $${K_{rc}} = \frac{{4{a_{1x}}}}{{{N_t}a_p}}{\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {K_{re}} = \frac{{\pi  \cdot {a_{0x}}}}{{{N_t}a_p}}\tag{30}$$
