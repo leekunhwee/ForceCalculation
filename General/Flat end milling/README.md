@@ -7,14 +7,6 @@
 
 对于<b>平底立铣刀</b>而言，因为每一刀齿周期的总材料去除量在有螺旋角和没有螺旋角的情况下都相同，因此螺旋角对平均切削力没有影响。
 
-<div align = "center">
-
-<img src = "1.png"  width = "675" height = "388.5" alt = "Flat—end" title = "Flat—end">
-
-</div>
-
-<p align = "center"><b>图 1.  平底立铣刀切削刃及受力情况 </b> </p>
-
 ##	平均力计算
 对于平底立铣刀而言，根据《Manufacturing Automation》的$P44,(2.89)$，第$j$个刀齿上，高度$z$处的瞬时刚性力模型的基本公式可表示为：
 
@@ -35,6 +27,14 @@ $g({\phi _j}(z))$是根据切入切出角，来判断参与切削与否的二元
 $$ h({\phi _j}(z)) = {f _{t}}\sin {\phi _j}(z) \tag{2}$$
 其中，$f _t$为每齿进给量。
 
+<div align = "center">
+
+<img src = "1.png"  width = "675" height = "388.5" alt = "Flat—end" title = "Flat—end">
+
+</div>
+
+<p align = "center"><b>图 1.  平底立铣刀切削刃及受力情况 </b> </p>
+
 根据图1所示几何关系，将$RTC$坐标系下的切削力转化到$XYZ$坐标系下，有：
 
 $$\begin{pmatrix}
@@ -52,7 +52,7 @@ $$\begin{pmatrix}
 \end{pmatrix} \tag{3}$$
 
 那么，由$(1)(2)(3)$，就会有：
-$$\begin{array}{l}
+$$\begin{array}{c}
 d{F _{x,j}}\left( {{\phi _j}\left( z \right)} \right) = g\left( {{\phi _j}\left( z \right)} \right)\left[ \begin{array}{l}
  - \left( {{K _{tc}}{f _t}\sin {\phi _j}\left( z \right) + {K _{te}}} \right)\cos {\phi _j}\left( z \right)\\\\
  - \left( {{K _{rc}}{f _t}\sin {\phi _j}\left( z \right){\rm{ + }}{K _{re}}} \right)\sin {\phi _j}\left( z \right)
